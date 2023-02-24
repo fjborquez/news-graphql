@@ -195,6 +195,8 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
+        \Nuwave\Lighthouse\Federation\FederationServiceProvider::class,
+
     ],
 
     /*

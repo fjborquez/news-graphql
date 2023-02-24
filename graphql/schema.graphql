@@ -47,7 +47,7 @@ type User {
     updated_at: DateTime!
 }
 
-type News {
+type News @key(fields: "id") {
   id: ID!
   date: String
   companies: [String]
