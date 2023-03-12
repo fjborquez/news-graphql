@@ -23,7 +23,7 @@ type Query {
       id: ID!
     ): News
 
-    newsall(id: ID): [News]!
+    newsall: [News!]! @paginate(resolver:"App\\GraphQL\\Queries\\Newsall")
 }
 
 "Account of a person who utilizes this application."
